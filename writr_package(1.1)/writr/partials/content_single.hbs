@@ -40,22 +40,6 @@
 
     </article>
     
-    <div class="animate-post animationBegin">
-    
-    {{#if author}}
-    <div class="author-bio" {{#if @author.cover}}style="background-image: url({{@author.cover}})"{{/if}}>
-        <section class="author inner">
-        	{{#if author.image}}
-        	<img src="{{author.image}}" width="150px" height="150px" alt="Profile Image" />
-        	{{/if}}
-            <h4>{{author.name}}</h4>
-            <p>{{author.bio}}</p>
-        </section>
-    </div>
-    {{/if}}
-    
-    </div>
-    
     {{/post}}
 
 </main>
