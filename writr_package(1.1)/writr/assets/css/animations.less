@@ -1,0 +1,54 @@
+.animate-post > * {
+	position:relative;
+	opacity:1;
+	top:0px;
+	-webkit-transition: all 600ms cubic-bezier(0.230, 1.000, 0.320, 1.000) 0ms;
+	-moz-transition: all 800ms cubic-bezier(0.230, 1.000, 0.320, 1.000) 0ms;
+	-o-transition: all 800ms cubic-bezier(0.230, 1.000, 0.320, 1.000) 0ms;
+	-ms-transition: all 800ms cubic-bezier(0.230, 1.000, 0.320, 1.000) 0ms;
+	transition: all 600ms cubic-bezier(0.230, 1.000, 0.320, 1.000) 0ms;
+}
+ 
+.animate-post.animationBegin > * {
+	opacity:0;
+	top:100px;
+	-webkit-transition:all 0 linear 0 !important; /* rewind instantly */
+	-moz-transition:all 0 linear 0 !important;
+	-o-transition:all 0 linear 0 !important;
+	-ms-transition:all 0 linear 0 !important;
+	transition:all 0 linear 0 !important;
+}
+
+@media only screen and (max-width: 767px) {
+
+	.animate-post > * {
+		position: static;
+		opacity: 1;
+		-webkit-transition: none;
+		-moz-transition: none;
+		-o-transition: none;
+		-ms-transition: none;
+		transition: none;
+	}
+	
+	.animate-post.animationBegin > * {
+		opacity: 1;
+		-webkit-transition:none;
+		-moz-transition:none;
+		-o-transition:none;
+		-ms-transition:none;
+		transition:none;
+	}	
+
+}
+
+/* CSS3 animations off for IE8 & IE9 because they stink!!!!!! */
+
+.ie8 .animate-post.animationBegin > *,
+.ie9 .animate-post.animationBegin > * {
+	position: relative;
+	top: 0px;
+	opacity: 1;
+	-ms-transition:none;
+	transition:none;
+}

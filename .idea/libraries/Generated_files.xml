@@ -1,0 +1,18 @@
+<component name="libraryTable">
+  <library name="Generated files" type="javaScript">
+    <properties>
+      <sourceFilesUrls>
+        <item url="file://$PROJECT_DIR$/writr_package(1.1)/writr/assets/js/index.min.js" />
+        <item url="file://$PROJECT_DIR$/writr_package(1.1)/writr/assets/js/jquery.appear.min.min.js" />
+        <item url="file://$PROJECT_DIR$/writr_package(1.1)/writr/assets/js/modernizr-2.6.2.min.min.js" />
+      </sourceFilesUrls>
+    </properties>
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/writr_package(1.1)/writr/assets/js/index.min.js" />
+      <root url="file://$PROJECT_DIR$/writr_package(1.1)/writr/assets/js/jquery.appear.min.min.js" />
+      <root url="file://$PROJECT_DIR$/writr_package(1.1)/writr/assets/js/modernizr-2.6.2.min.min.js" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

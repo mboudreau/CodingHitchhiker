@@ -1,0 +1,12 @@
+{{! The featured header on the single blog pages, with the site logo. }}
+<header id="site-head-inner" {{#if @blog.cover}}style="background-image: url({{@blog.cover}})"{{/if}}>
+    <div class="vertical">
+    	<div id="site-head-content" class="inner">
+			{{#if @blog.logo}}
+            <a id="blog-logo" href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="Home" /></a>
+            {{else}}
+            <h1 class="blog-title"><a href="{{@blog.url}}">{{@blog.title}}</a></h1>
+            {{/if}}
+        </div>
+    </div>
+</header>

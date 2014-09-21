@@ -1,0 +1,20 @@
+{{! The big featured header on the homepage, with the site logo, description, and social icons. }}
+<header id="site-head" {{#if @blog.cover}}style="background-image: url({{@blog.cover}})"{{/if}}>
+    <div class="vertical">
+    	<div id="site-head-content" class="inner">
+			{{#if @blog.logo}}
+            <a id="blog-logo" href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="Home" /></a>
+            {{else}}
+            <h1 class="blog-title"><a href="{{@blog.url}}">{{@blog.title}}</a></h1>
+            {{/if}}
+            <h2 class="blog-description">{{@blog.description}}</h2>
+            <div id="social-icons">
+                <a class="email-link" href="mailto:&#109;&#105;&#99;&#104;&#101;&#108;&#98;&#111;&#117;&#100;&#114;&#101;&#97;&#117;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;"><i class="fa fa-envelope"></i></a>
+            	<a class="google-plus-link" href="https://plus.google.com/+MichelBoudreau/"><i class="fa fa-google-plus"></i></a>
+            	<a class="github-link" href="https://github.com/mboudreau"><i class="fa fa-github"></i></a>
+            	<a class="stack-exchange-link" href="http://stackexchange.com/users/337103/j-a-x"><i class="fa fa-stack-exchange"></i></a>
+                <a class="linked-in-link" href="http://www.linkedin.com/pub/michel-boudreau/21/27b/675"><i class="fa fa-linkedin"></i></a>
+            </div>
+        </div>
+    </div>
+</header>
